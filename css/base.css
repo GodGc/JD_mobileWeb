@@ -1,0 +1,51 @@
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+
+    /*触摸高亮取消*/
+    -webkit-tap-highlight-color: transparent;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 14px;
+    font-family: "MicroSoft YaHei",sans-serif;
+    color: #333;
+    background: #F5F5F5;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+a:hover{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+input{
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+}
+.f_r{
+    float: right;
+}
+.f_l{
+    float: left;
+}
+/*清除浮动，给有浮动元素的父盒子加clearfix*/
+.clearfix::before,
+.clearfix::after{
+    content: "";
+    display:block;
+    line-height: 0;
+    visibility:hidden;
+    clear: both;
+}
+.clearfix{
+    zoom:1;
+}
